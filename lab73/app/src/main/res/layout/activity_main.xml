@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- TV Switch -->
+
+    <!-- Lightning Switch -->
+
+    <LinearLayout
+        android:id="@+id/tvContainer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="37dp"
+        android:background="@drawable/switch_background"
+        android:orientation="vertical"
+        android:padding="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/homeTheaterContainer"
+        app:layout_constraintEnd_toStartOf="@+id/lightningContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:src="@drawable/ic_tv" />
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:padding="16dp"
+            android:text="TV"
+            android:thumbTint="@color/switch_thumb_color"
+            android:textColor="@color/switch_text_color" />
+    </LinearLayout>
+
+    <!-- Home Theater Switch -->
+
+    <!-- Video Game Switch -->
+    <LinearLayout
+        android:id="@+id/lightningContainer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="34dp"
+        android:background="@drawable/switch_background"
+        android:orientation="vertical"
+        android:padding="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/videoGameContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvContainer"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:src="@drawable/ic_lightning" />
+
+        <Switch
+            android:id="@+id/switch3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:padding="16dp"
+            android:text="Lightning"
+            android:thumbTint="@color/switch_thumb_color"
+            android:textColor="@color/switch_text_color" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/homeTheaterContainer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="299dp"
+        android:background="@drawable/switch_background"
+        android:orientation="vertical"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/videoGameContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvContainer">
+
+        <ImageView
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:src="@drawable/ic_home_theater" />
+
+        <Switch
+            android:id="@+id/switch4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:padding="16dp"
+            android:text="Home Theater"
+            android:thumbTint="@color/switch_thumb_color"
+            android:textColor="@color/switch_text_color" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/videoGameContainer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="299dp"
+        android:background="@drawable/switch_background"
+        android:orientation="vertical"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/homeTheaterContainer"
+        app:layout_constraintTop_toBottomOf="@+id/lightningContainer">
+
+        <ImageView
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:src="@drawable/ic_video_game" />
+
+        <Switch
+            android:id="@+id/switch5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:padding="16dp"
+            android:text="Video Game"
+            android:thumbTint="@color/switch_thumb_color"
+            android:textColor="@color/switch_text_color" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

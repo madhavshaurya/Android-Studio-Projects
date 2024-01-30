@@ -1,0 +1,11 @@
+<resources>
+    <style name="CustomToggleButton" parent="Widget.AppCompat.Button">
+        <!-- Style attributes for the CustomToggleButton -->
+        <item name="android:background">@drawable/toggle_button_selector</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <!-- Add any other style attributes as needed -->
+    </style>
+</resources>

@@ -1,0 +1,17 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- State when the switch is checked -->
+    <item android:state_checked="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/holo_green_light" /> <!-- Set the background color when checked (green in this case) -->
+            <corners android:radius="8dp" /> <!-- Set the corner radius, adjust as needed -->
+        </shape>
+    </item>
+
+    <!-- Default state (unchecked) -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#d1dbd0" /> <!-- Set the default background color (gray in this case) -->
+            <corners android:radius="8dp" /> <!-- Set the corner radius, adjust as needed -->
+        </shape>
+    </item>
+</selector>

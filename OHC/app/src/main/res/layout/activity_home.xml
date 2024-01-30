@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".HomeActivity">
+
+    <Button
+        android:id="@+id/btn_appointments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Appointments" />
+
+    <Button
+        android:id="@+id/btn_doctors"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Doctors" />
+
+    <Button
+        android:id="@+id/btn_patient_records"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Patient Records" />
+
+    <Button
+        android:id="@+id/btn_medical_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Medical History" />
+
+    <!-- You can add more buttons or cards for other activities as needed -->
+
+</LinearLayout>
